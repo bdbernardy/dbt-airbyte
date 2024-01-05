@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: temp_benoit_airbyte
+    database: departure-archive
+    schema: temp_benoit_airbyte
+    tables:
+      - name: cities
