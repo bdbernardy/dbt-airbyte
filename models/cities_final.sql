@@ -11,7 +11,7 @@
     )
 }}
 
-SELECT id, name, created_at, population
+SELECT id, name, created_at
 FROM {{ source('temp_benoit_airbyte', 'cities') }}
 
 {% if is_incremental() %}
